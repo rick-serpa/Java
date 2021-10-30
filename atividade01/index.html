@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="resultado">
+
+    </div>
+
+    <script>
+
+        console.log("Hello World");
+
+    </script>
+
+
+    <h1>Declaração de variáveis</h1>
+
+    <script>
+
+        if (true) {
+            var numero = 10;
+        }
+
+        console.log(numero)
+
+    </script>
+
+    <script>
+
+
+        var nome = "Henrique";
+
+        console.log(nome);
+
+        nome = 7;
+
+        console.log(nome)
+
+    </script>
+
+    <script>
+
+        var a = 3;
+        var b = 2;
+        console.log("Operações aritméticas =")
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a * b);
+        console.log(a / b);
+        console.log(a % b);
+    </script>
+
+    <script>
+
+        var a = 10.5
+        console.log("Operações com Match =")
+
+        console.log(Math.trunc(a));
+        console.log(Math.pow(a, 2));
+        console.log(Math.round(a));
+        console.log(Math.sqrt(a));
+        console.log(Math.ceil(a));
+        console.log(Math.floor(a));
+
+        console.log("---------------------------------")
+    </script>
+
+    <h1>Exemplo e vínculo JS com HTML</h1>
+
+    <input type="text" id="idade" value="17">
+
+    <p id="retorno"></p>
+
+    <script>
+
+        var retorno = document.getElementById('retorno');
+        retorno.innerHTML = "Valor enviado através do JS";
+
+        var idade = document.getElementById('idade').value;
+        console.log(idade)
+
+
+        if (idade <= 18)
+            console.log("Menor")
+
+        if (idade > 18)
+            console.log("Maior")
+
+    </script>
+
+    <script>
+        console.log("Exemplo Switch Case =");
+
+        var numero = 5;
+
+        switch (numero) {
+
+            case 1:
+                console.log("O numero é 1");
+                break;
+            case 3:
+                console.log("O numero é 3");
+                break;
+            case 5:
+                console.log("O numero é 5");
+                break;
+            default:
+                console.log("Valor não encontrado");
+        }
+
+        console.log("--------------------------")
+
+    </script>
+
+    <script>
+
+        var numero = 11;
+
+        switch (numero) {
+
+            case 1:
+                console.log("Fevereiro");
+                break;
+            case 7:
+                console.log("Julho");
+                break;
+            case 11:
+                console.log("Novembro");
+                break;
+            default:
+                console.log("Mês invalido");
+        }
+
+        console.log("--------------------------");
+
+        var texto = "Exemplo";
+        texto += " de texto";
+        console.log(texto);
+
+        for (let x = 0; x <= 10; x++) {
+            document.getElementById('resultado').innerHTML += x + " x " + 7 + " = " + (x * 7) + "<br/>";
+        }
+
+        console.log("--------------------------")
+
+
+    </script>
+
+    <p id="par"></p>
+    <p id="impar"></p>
+    <input type="text" id="numero" value="10">
+
+    <script>
+
+        var numero = document.getElementById('numero').value;
+        var contador = 0;
+
+        while (contador <= numero) {
+
+            if (contador % 2 == 0) {
+                document.getElementById('par').innerHTML += contador + "<br/>";
+                console.log("é par");
+            } else {
+                document.getElementById('impar').innerHTML += contador + "<br/>";
+                console.log("é impar");
+            }
+            contador++;
+        }
+
+    </script>
+
+    <script>
+
+        lacoExemplo:
+        for (let x = 0; x < 7; x++) {
+
+            if (x == 3) {
+                continue lacoExemplo
+            }
+            console.log("Contando: " + x);
+        }
+    </script>
+
+</body>
+
+</html>
