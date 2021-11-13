@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+
+<body>
+
+    <script>
+
+        var pessoa = {
+            nome: "Henrique",
+            idade: 18,
+            statusCadastro: true,
+            tecnologias: ['JavaScript', 'CSS', 'HTML'],
+            dizerHello: function () { console.log("Hello!"); },
+            endereco: { rua: 7, bairro: 'centro' }
+
+        };
+
+        console.log(pessoa.tecnologias, [1]);
+
+    </script>
+
+
+
+    <script>
+
+        function HelloWorld() {
+
+            console.log("HelloWorld")
+        }
+
+    </script>
+
+    <script>
+
+        var escola = {
+            nome: "Elza",
+            idade: 52,
+            endereco: { rua: 4, bairro: 'centro' },
+        }
+
+        console.log(escola)
+    </script>
+
+
+    <script>
+
+        function escola() {
+
+            console.log(escola)
+        }
+
+    </script>
+    <input type="text" id="escola" value="Elza">
+    <button onclick="escola()">Atribuir</button>
+
+<script>
+    var cores = [];
+
+    cores[0] = 'Vermelho'
+    cores[1] = 'Azul'
+    cores[2] = 'Amarelo'
+    
+    cores.forEach(function (elemento){
+        console.log(elemento)
+    });
+var frutas = [];
+frutas[0] = {nome: 'banana', cor: 'Amrelo'}
+frutas[1] = {nome: 'uva', cor: 'Roxo'}
+frutas[2] = {nome: 'pera', cor: 'Amarelo'}
+
+frutas.forEach(function (elemento){
+        console.log(elemento)
+    });
+</script>
+
+<button onclick="helloButton()">Chamar função</button>
+<script>
+
+function hello(){
+    console.log("Hello World")
+}
+
+function helloButton(){
+
+    alert("Hello World")
+}
+
+hello();
+
+
+
+</script>
+
+</body>
+</html>

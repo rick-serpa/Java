@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            console.log("Hello JQuery");
+
+            $('#alert').click(function(){
+                alert("Exemplo de clique!");
+            });
+        });
+
+    </script>
+</head>
+<body>
+    
+    <button id="alert">Alert!</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod nisi, fuga earum vel temporibus a iste doloribus distinctio aperiam. Quam magnam dolorem mollitia eligendi necessitatibus dignissimos eaque excepturi saepe!</p>
+    
+    <script>
+        $(document).ready(function(){
+            $('#esconder').click(function(){
+                $('p').hide();
+            });
+        });
+    </script>
+    <button id="esconder">Alert02!</button>
+</body>
+</html>
