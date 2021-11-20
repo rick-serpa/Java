@@ -1,37 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script>
 
-        $(document).ready(function(){
+        $(document).ready(function () {
             console.log("Hello JQuery");
 
-            $('#alert').click(function(){
+            $('#alert').click(function () {
                 alert("Exemplo de clique!");
             });
         });
 
     </script>
 </head>
+
 <body>
-    
+
     <button id="alert">Alert!</button>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod nisi, fuga earum vel temporibus a iste doloribus distinctio aperiam. Quam magnam dolorem mollitia eligendi necessitatibus dignissimos eaque excepturi saepe!</p>
-    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod nisi, fuga earum vel temporibus a iste
+        doloribus distinctio aperiam. Quam magnam dolorem mollitia eligendi necessitatibus dignissimos eaque excepturi
+        saepe!</p>
+
     <script>
-        $(document).ready(function(){
-            $('#esconder').click(function(){
-                $('p').hide();
+        $(document).ready(function () {
+            $('#esconder').click(function () {
+                $('p').hide(3000).show(1000);
             });
         });
     </script>
     <button id="esconder">Alert02!</button>
+
+    <script>
+        $('button').on(
+            {
+
+                click: function () {
+                    console.log("Clicou no botão");
+                },
+                mouseenter: function () {
+                    console.log("Moveu o mouse no botão");
+                },
+                mouseleave: function () {
+                    console.log("lfblrbrbmrb")
+                }
+            })
+
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+        $('#cor1').click(function(){
+            $('div').toggleClass('cor1');
+
+        });
+        $('#cor2').click(function(){
+            $('div').toggleClass('cor2');
+
+        });
+        $('#cor3').click(function(){
+            $('div').toggleClass('cor3');
+
+        });
+        $('#cor4').click(function(){
+            $('div').toggleClass('cor4');
+
+        });
+        $('#cor5').click(function(){
+            $('div').toggleClass('cor5');
+        });
+    });
+    </script>
+    <style>
+        div {
+            height: 150px;
+            width: 150px;
+            border: solid 1px;
+        }
+        .cor1{
+            background-color: red;
+        }
+        .cor2{
+            background-color: violet;
+        }
+        .cor3{
+            background-color: greenyellow;
+        }
+        .cor4{
+            background-color: blue;
+        }
+        .cor5{
+            background-color: yellow;
+        }
+        
+    </style>
+    <p id="paragrafo"> Paragrafo Inicial</p>
+    <button id="cor1">Cor01</button>
+    <button id="cor2">Cor02</button>
+    <button id="cor3">Cor03</button>
+    <button id="cor4">Cor04</button>
+    <button id="cor5">Cor05</button>
+    <div></div>
 </body>
 </html>
+
